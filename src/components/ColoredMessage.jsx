@@ -1,7 +1,5 @@
-export const ColoredMessage = (props) => {
-  // 分割代入
-  const { color, children } = props;
-
+// 引数を分割代入
+export const ColoredMessage = ({ color, children }) => {
   const contentStyle = {
     // プロパティ名と同じなので省略できる
     color,
