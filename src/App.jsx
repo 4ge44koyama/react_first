@@ -5,17 +5,12 @@ export const App = () => {
   const onClickButton = () => {
     alert('Hello!!');
   };
-  // CSSオブジェクト
-  const contentPinkStyle = {
-    color: 'pink',
-    fontSize: '20px'
-  };
 
   return (
     <>
       <h1 style={{ color: 'red' }}>こんにちは！</h1>
-      <ColoredMessage/>
-      <p style={contentPinkStyle}>元気です！</p>
+      <ColoredMessage color="blue" message="お元気ですか？"/>
+      <ColoredMessage color="pink" message="元気です！"/>
       <button onClick={onClickButton}>ボタン</button>
     </>
   );
